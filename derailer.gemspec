@@ -6,11 +6,10 @@ require 'derailer/version'
 Gem::Specification.new do |spec|
   spec.name          = "derailer"
   spec.version       = Derailer::VERSION
-  spec.authors       = ["Joseph Near"]
-  spec.email         = ["jnear@csail.mit.edu"]
+  spec.authors       = ["Blue Apron Engineering"]
+  spec.email         = ["engineering@blueapron.com"]
   spec.description   = "Static analysis for Rails applications"
-  spec.summary       = "Static analysis for Rails applications"
-  spec.homepage      = ""
+  spec.summary       = "Fork of Derailer by Joseph Near at MIT (jnear@csail.mit.edu)"
   spec.license       = "GPLv3"
 
   spec.files         = `git ls-files`.split($/)
@@ -18,7 +17,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.3"
+  spec.add_development_dependency "bundler", "~> 1.12.5"
   spec.add_development_dependency "rake"
   spec.add_dependency 'rspec-rails'
   spec.add_dependency 'sdg_utils'
